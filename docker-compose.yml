@@ -1,0 +1,43 @@
+version: '3.1'
+
+services:
+
+  php-env:
+    build: .
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 9000:80
+  node:
+    depends_on:
+      - mysqldb
+    build: ./node
+    restart: unless-stopped
+    env_file: ./.env
+    ports:
+      - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
+    environment:
+      - DB_HOST=mysqldb
+      - DB_USER=$MYSQLDB_USER
+      - DB_PASSWORD=$MYSQLDB_ROOT_PASSWORD
+      - DB_NAME=$MYSQLDB_DATABASE
+      - DB_PORT=$MYSQLDB_DOCKER_PORT
+      - CLIENT_ORIGIN=$CLIENT_ORIGIN
+    networks:
+      - backend
+      - frontend
+
+  mysql_db:
+    image: mysql:latest
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    restart: always
+    ports:
+      - 9001:80
+    environment:
+      - PMA_ARBITRARY=1
