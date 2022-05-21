@@ -7,12 +7,12 @@
 <summary><b>(click pour details)</b></summary>
 <!-- MarkdownTOC -->
 
-1. [Docker:](https://github.com/ferhi-fatah/Alos_Act4#docker-)
+1. [Docker](https://github.com/ferhi-fatah/Alos_Act4#docker-)
     1. [1. C'est quoi Docker](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-docker)
 1. [Node.js](https://github.com/ferhi-fatah/Alos_Act4#nodejs)
     1. [1. C'est quoi Node.js](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-nodejs)
     1. [2. l'image de Node.js](https://github.com/ferhi-fatah/Alos_Act4#limage-de-nodejs-)
-1. [phpmyadmin:](https://github.com/ferhi-fatah/Alos_Act4#phpmyadmin)
+1. [phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#phpmyadmin)
     1. [1. C'est quoi phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-phpmyadmin-)
     1. [2. l'image de phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#limage-de-phpmyadmin-)
 
