@@ -20,7 +20,7 @@ app.use('/',authToken, totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: implement.accueil
+                implementation: ('../UI/interface.html')
             },
             
 

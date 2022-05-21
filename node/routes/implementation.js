@@ -9,6 +9,7 @@ const { body, validationResult } = require('express-validator');
 module.exports.accueil = function (apiVersion, req, res) {
 
   return res.json({ status: "success", message: "Welcome To cryptom Testing API Version : 1.0.0" });
+  
 }
 
 // récupéré data ( currencies ):
