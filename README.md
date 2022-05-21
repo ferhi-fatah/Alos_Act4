@@ -7,7 +7,7 @@
 <summary><b>(click pour details)</b></summary>
 <!-- MarkdownTOC -->
 
-1. [Docker:](#Docker)
+1. [Docker:](https://github.com/ferhi-fatah/Alos_Act4#docker-)
     1. [1. C'est quoi Docker](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-docker)
 1. [Node.js]
     1. [1. C'est quoi Node.js]
@@ -19,13 +19,13 @@
 <!-- /MarkdownTOC -->
 </details>
 
-## Docker :
+## [Docker](https://www.docker.com/) :
 
 <p align="center" width="100%">
     <img src="https://user-images.githubusercontent.com/62666792/169522811-b547388e-c96d-447e-b1f2-a7bffa69ada9.png"> 
 </p>
 
-#### C'est quoi [Docker](https://www.docker.com/)?  
+#### C'est quoi Docker ?  
 
 
 
@@ -36,12 +36,13 @@ Selon la firme de recherche sur l'industrie 451 Research, « Docker est un outil
 Techniquement, Docker étend le format de conteneur Linux standard, LXC, avec une API de haut niveau fournissant une solution pratique de virtualisation qui exécute les processus de façon isolée. Pour ce faire, Docker utilise entre autres LXC, cgroups et le noyau Linux lui-même1. Contrairement aux machines virtuelles traditionnelles, un conteneur Docker n'inclut pas de système d'exploitation, mais s'appuie au contraire sur les fonctionnalités du système d’exploitation fournies par la machine hôte.
 
 La technologie de conteneur de Docker peut être utilisée pour étendre des systèmes distribués de façon à ce qu'ils s'exécutent de manière autonome depuis une seule machine physique ou une seule instance par nœud. Cela permet aux nœuds d'être déployés au fur et à mesure que les ressources sont disponibles, offrant un déploiement transparent et similaire aux PaaS pour des systèmes comme Apache Cassandra, Riak, ou d'autres systèmes distribués
-
-## C'est quoi [Node.js](https://nodejs.org/en/)?
+## [Node.js](https://nodejs.org/en/)
 
 <p align="center" width="100%">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/220px-Node.js_logo.svg.png"> 
 </p>
+
+#### C'est quoi Node.js?
 
 Node.js est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau évènementielles hautement concurrentes qui doivent pouvoir monter en charge.
 
@@ -79,15 +80,14 @@ Concrètement, Node.js est un environnement bas niveau permettant l’exécution
 ```
  - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/nodejs/node/blob/master/LICENSE)
  
- 
- 
-## C'est quoi [phpMyAdmin](https://www.phpmyadmin.net/)?
-
+## [phpMyAdmin](https://www.phpmyadmin.net/)
 
 <p align="center" width="100%">
     <img src="https://raw.githubusercontent.com/docker-library/docs/1a06458dd2512b5bcda0a849738bb5ca32bf8ec0/phpmyadmin/logo.png"> 
 </p>
 
+ 
+#### C'est quoi phpMyAdmin ?
 
 phpMyAdmin (PMA) est une application Web de gestion pour les systèmes de gestion de base de données MySQL et MariaDB, réalisée principalement en PHP et distribuée sous licence GNU GPL.
 
