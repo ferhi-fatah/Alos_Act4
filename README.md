@@ -132,3 +132,31 @@ services:
 
 
 ![image](https://user-images.githubusercontent.com/62666792/169588346-5e74f6b6-b8af-4fab-a0ad-e03ce4b09a2a.png)
+
+
+## API Reference For PostMan :
+
+L'API est conçue pour renvoyer différents codes d'état en fonction du contexte et de l'action. De cette façon, si une demande entraîne une erreur, l'appelant est en mesure d'avoir un aperçu de ce qui s'est mal passé. Le tableau suivant donne un aperçu du comportement général des fonctions API.
+
+
+
+| Request type    |Description                   |
+| :--------       |:-------------------------    |
+|        `GET`     | Access one or more resources and return the result as JSON.|
+|        `POST`     | Return 201 Created if the resource is successfully created and return the newly created resource as JSON.Return 200 OK if the resource is accessed or modified successfully|
+
+The following table shows the possible return codes for API requests.
+
+| Return values    | Description                |
+| :--------       | :------------------------- |
+| `200 OK`     | The GET, PUT or DELETE request was successful, and the resource(s) itself is returned as JSON.               |
+| `204 No Content`      | The server has successfully fulfilled the request, and there is no additional content to send in the response payload body.             |
+| `201 Created`      | The POST request was successful, and the resource is returned as JSON.    |
+| `304 Not Modified`      |The resource hasn't been modified since the last request.           |
+| `400 Bad Request`      |A required attribute of the API request is missing. For example, the title of an issue is not given.        |
+| `401 Unauthorized`      |The user isn't authenticated. A valid user token is necessary.  |
+| `403 Forbidden`      | The request isn't allowed. For example, the user isn't allowed to delete a project.  |
+| `404 Not Found`      | A resource couldn't be accessed. For example, an ID for a resource couldn't be found. |
+| `422 Unprocessable`      | The entity couldn't be processed. |
+| `500 Server Error`      | While handling the request, something went wrong on the server.   |
+
