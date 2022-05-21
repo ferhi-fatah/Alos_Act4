@@ -7,9 +7,9 @@ var totoro = require('totoro-node');
 
 app.use(express.json())
 
-app.use("/auth", require("./authenticate/authentication"));
+//app.use("/auth", require("./authenticate/authentication"));
 
-app.use('/',authToken, totoro.rain({
+app.use('/', totoro.rain({
 
     "1.0.0": {
         active: true,
@@ -20,7 +20,7 @@ app.use('/',authToken, totoro.rain({
                 method: "GET",
                 active: true,
                 deprecated: false,
-                implementation: ('../UI/interface.html')
+                implementation: implement.accueil
             },
             
 

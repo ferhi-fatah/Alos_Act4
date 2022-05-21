@@ -125,6 +125,11 @@ services:
       - PMA_ARBITRARY=1
       
  ```
+ 
+ 
+[![Try in PWD](https://github.com/play-with-docker/stacks/raw/cff22438cb4195ace27f9b15784bbb497047afa7/assets/images/button.png)](http://play-with-docker.com?stack=https://raw.githubusercontent.com/nextcloud/docker/8db861d67f257a3e9ac1790ea06d4e2a7a193a6c/stack.yml)
+
+
  - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/phpmyadmin/docker/blob/master/LICENSE)
 
 ## API Reference Pour PostMan :
@@ -174,8 +179,34 @@ les codes routours possibles pour les requets de l' API .
 ![image](https://user-images.githubusercontent.com/62666792/169588346-5e74f6b6-b8af-4fab-a0ad-e03ce4b09a2a.png)
 
  - en parallel vous pouvez teste les resquets de l' API sur le porte : 
-<<<<<<< HEAD
     [http://localhost:3000](http://localhost:3000/)
-=======
-    [http://localhost:3000](http://localhost:3000/)
->>>>>>> b44d28f976fad0e1d4e19d2e5c2217cee3a498d3
+#### l'aceuille :
+https://user-images.githubusercontent.com/62666792/169663309-c490bbd3-e8eb-49e9-81cd-c23df2cd06dd.mp4
+ 
+##### la récupération de data :
+ - la route (http://localhost:3000/1.0.0/data) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165102851-27b92d40-d41c-45c8-8878-0eecebbd4853.png) 
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165104176-11cf3d97-ae9a-4677-bf44-3bb6bf3e44e7.png)
+ - la route (http://localhost:3000/2.0.0/data) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165103408-834a117d-a3ad-466b-b75a-69a01f9cc4db.png)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165104270-a74582d5-1f02-446a-a68b-519b2ed19a80.png)
+##### la suppression  de data :  
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165105022-48f936db-f878-4573-b026-10ce78bc9f20.png)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
+![image](https://user-images.githubusercontent.com/62666792/165105220-e8c5f593-948f-4178-a065-d9fbee7600e9.png)
+##### la modification  de data :  
+ - la route (http://localhost:3000/1.0.0/currencies/1) :  
+ 
+![1](https://user-images.githubusercontent.com/62666792/165106193-26112639-0f3c-402d-8a1a-d6f02d97e54e.PNG)
+ - la route (http://localhost:3000/2.0.0/currencies/1) :  
+ 
+![2](https://user-images.githubusercontent.com/62666792/165106203-565a059f-8815-4448-b9d5-6bf0fe16aaa8.PNG)

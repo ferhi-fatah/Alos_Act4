@@ -8,7 +8,9 @@ const { body, validationResult } = require('express-validator');
 // l'accueil :
 module.exports.accueil = function (apiVersion, req, res) {
 
-  return res.json({ status: "success", message: "Welcome To cryptom Testing API Version : 1.0.0" });
+  return function () {
+    location.href = '../UI/accueille.html';
+};
   
 }
 
