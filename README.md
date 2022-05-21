@@ -124,15 +124,6 @@ services:
       
  ```
  - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/phpmyadmin/docker/blob/master/LICENSE)
- 
-
-
-
-![1](https://user-images.githubusercontent.com/62666792/169587999-bbdad324-229e-4bb0-b994-7e953c22673c.PNG)
-
-
-![image](https://user-images.githubusercontent.com/62666792/169588346-5e74f6b6-b8af-4fab-a0ad-e03ce4b09a2a.png)
-
 
 ## API Reference For PostMan :
 
@@ -162,3 +153,20 @@ les codes routours possibles pour les requets de l' API .
 | `422 Unprocessable`      | la requête est correctement formatée,dedecte un erreur qui empêche le serveur d'émettre une réponse correctement. |
 | `500 Server Error`      | Erreur au niveau de  server.   |
 
+
+## Setup :
+
+ - execute le code suivant :
+```
+    $ docker-compose up -d
+```
+ - ouvrire  ton  navigateur sur le lien :
+   [http://localhost:9001](http://localhost:9001/)
+   
+ - maintenant tu peux bien gérer vos tables de data par  le phpMyadmin
+
+
+![1](https://user-images.githubusercontent.com/62666792/169587999-bbdad324-229e-4bb0-b994-7e953c22673c.PNG)
+
+
+![image](https://user-images.githubusercontent.com/62666792/169588346-5e74f6b6-b8af-4fab-a0ad-e03ce4b09a2a.png)
