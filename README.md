@@ -9,6 +9,7 @@
 
 1. [Docker](https://github.com/ferhi-fatah/Alos_Act4#docker-)
     1. [1. C'est quoi Docker](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-docker)
+    1. [2.Installation](https://github.com/ferhi-fatah/Alos_Act4#Installation)
 1. [Node.js](https://github.com/ferhi-fatah/Alos_Act4#nodejs)
     1. [1. C'est quoi Node.js](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-nodejs)
     1. [2. l'image de Node.js](https://github.com/ferhi-fatah/Alos_Act4#limage-de-nodejs-)
@@ -40,6 +41,7 @@ Techniquement, Docker étend le format de conteneur Linux standard, LXC, avec un
 La technologie de conteneur de Docker peut être utilisée pour étendre des systèmes distribués de façon à ce qu'ils s'exécutent de manière autonome depuis une seule machine physique ou une seule instance par nœud. Cela permet aux nœuds d'être déployés au fur et à mesure que les ressources sont disponibles, offrant un déploiement transparent et similaire aux PaaS pour des systèmes comme Apache Cassandra, Riak, ou d'autres systèmes distribués
 
 #### Installation
+
 ##### LINUX :
 
 Exucite ce line de code pour une facile isntalation de Docker:
@@ -54,7 +56,9 @@ Si vous êtes un débutant complet de Docker, vous devriez suivre la [série de 
 
 Téléchargez et installez [Docker Community Edition](https://www.docker.com/community-edition). si vous avez Homebrew-Cask, tapez simplement "brew cask install docker". Ou Téléchargez et installez [Docker Toolbox](https://docs.docker.com/toolbox/overview/). [Docker pour Mac](https://docs.docker.com/docker-for-mac/) est sympa, mais ce n'est pas aussi fini que l'installation de VirtualBox. [Voir la comparaison](https://docs.docker.com/docker-for-mac/docker-toolbox/).
 
+
 > **REMARQUE** Docker Toolbox est hérité. Vous devez utiliser Docker Community Edition, voir [Docker Toolbox](https://docs.docker.com/toolbox/overview/).
+
 
 Une fois que vous avez installé Docker Community Edition, cliquez sur l'icône Docker dans Launchpad. Ensuite, démarrez un conteneur :
 
