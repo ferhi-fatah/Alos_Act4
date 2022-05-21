@@ -38,6 +38,48 @@ Selon la firme de recherche sur l'industrie 451 Research, « Docker est un outil
 Techniquement, Docker étend le format de conteneur Linux standard, LXC, avec une API de haut niveau fournissant une solution pratique de virtualisation qui exécute les processus de façon isolée. Pour ce faire, Docker utilise entre autres LXC, cgroups et le noyau Linux lui-même1. Contrairement aux machines virtuelles traditionnelles, un conteneur Docker n'inclut pas de système d'exploitation, mais s'appuie au contraire sur les fonctionnalités du système d’exploitation fournies par la machine hôte.
 
 La technologie de conteneur de Docker peut être utilisée pour étendre des systèmes distribués de façon à ce qu'ils s'exécutent de manière autonome depuis une seule machine physique ou une seule instance par nœud. Cela permet aux nœuds d'être déployés au fur et à mesure que les ressources sont disponibles, offrant un déploiement transparent et similaire aux PaaS pour des systèmes comme Apache Cassandra, Riak, ou d'autres systèmes distribués
+
+#### Installation
+##### LINUX :
+
+Exucite ce line de code pour une facile isntalation de Docker:
+
+```sh
+curl -sSL https://get.docker.com/ | sh
+```
+Si vous ne souhaitez pas exécuter un script shell aléatoire, veuillez consulter les instructions d'[installation](https://docs.docker.com/engine/installation/linux/) pour votre distribution.
+Si vous êtes un débutant complet de Docker, vous devriez suivre la [série de tutoriels](https://docs.docker.com/engine/getstarted/) maintenant.
+
+##### macOS :
+
+Téléchargez et installez [Docker Community Edition](https://www.docker.com/community-edition). si vous avez Homebrew-Cask, tapez simplement "brew cask install docker". Ou Téléchargez et installez [Docker Toolbox](https://docs.docker.com/toolbox/overview/). [Docker pour Mac](https://docs.docker.com/docker-for-mac/) est sympa, mais ce n'est pas aussi fini que l'installation de VirtualBox. [Voir la comparaison](https://docs.docker.com/docker-for-mac/docker-toolbox/).
+
+> **REMARQUE** Docker Toolbox est hérité. Vous devez utiliser Docker Community Edition, voir [Docker Toolbox](https://docs.docker.com/toolbox/overview/).
+
+Une fois que vous avez installé Docker Community Edition, cliquez sur l'icône Docker dans Launchpad. Ensuite, démarrez un conteneur :
+
+```sh
+docker exécuter hello-world
+```
+
+Voilà, vous avez un conteneur Docker en cours d'exécution.
+
+Si vous êtes un débutant complet de Docker, vous devriez probablement suivre la [série de tutoriels](https://docs.docker.com/engine/getstarted/) maintenant.
+
+##### Windows 10 :
+
+Les instructions d'installation de Docker Desktop pour Windows sont disponibles [ici](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+
+Une fois installé, ouvrez powershell en tant qu'administrateur et exécutez :
+
+```powershell
+# Affichez la version de docker installée :
+version docker
+
+# Extrayez, créez et exécutez 'hello-world' :
+docker exécuter hello-world
+```
+
 ## [Node.js](https://nodejs.org/en/)
 
 <p align="center" width="100%">
