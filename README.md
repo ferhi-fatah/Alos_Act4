@@ -62,7 +62,7 @@ Concrètement, Node.js est un environnement bas niveau permettant l’exécution
   ```
  docker pull node
  ``` 
- - pour utulise a un Dockerfile :
+ - pour utilise a un Dockerfile :
  ```
   # syntax=docker/dockerfile:1
 
@@ -101,7 +101,7 @@ phpMyAdmin (PMA) est une application Web de gestion pour les systèmes de gestio
  ```
  docker pull phpmyadmin
  ```
- - pour utulise a un server :
+ - pour utilise a un server :
  ```
     $ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
 ```
