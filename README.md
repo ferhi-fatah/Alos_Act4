@@ -15,6 +15,8 @@
 1. [phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#phpmyadmin)
     1. [1. C'est quoi phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-phpmyadmin-)
     1. [2. l'image de phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#limage-de-phpmyadmin-)
+1. [API Reference Pour PostMan](https://github.com/ferhi-fatah/Alos_Act4#api-reference-pour-postman-)
+1. [Setup](https://github.com/ferhi-fatah/Alos_Act4/blob/main/README.md#setup-)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -60,7 +62,7 @@ Concrètement, Node.js est un environnement bas niveau permettant l’exécution
   ```
  docker pull node
  ``` 
- - pour utulise a un Dockerfile :
+ - pour utilise a un Dockerfile :
  ```
   # syntax=docker/dockerfile:1
 
@@ -99,7 +101,7 @@ phpMyAdmin (PMA) est une application Web de gestion pour les systèmes de gestio
  ```
  docker pull phpmyadmin
  ```
- - pour utulise a un server :
+ - pour utilise a un server :
  ```
     $ docker run --name myadmin -d --link mysql_db_server:db -p 8080:80 phpmyadmin
 ```
@@ -124,11 +126,52 @@ services:
       
  ```
  - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/phpmyadmin/docker/blob/master/LICENSE)
- 
 
+## API Reference Pour PostMan :
+
+L'API est conçue pour renvoyer différents codes d'état en fonction du contexte et de l'action. De cette façon, si une demande entraîne une erreur, l'appelant est en mesure d'avoir un aperçu de ce qui s'est mal passé. Le tableau suivant donne un aperçu du comportement général des fonctions API.
+
+
+
+| Request type    |Description                   |
+| :--------       |:-------------------------    |
+|        `GET`     | Accéder à une ou plusieurs ressources et renvoyer le résultat au format JSON.|
+|        `POST`     | Renvoie 201 si la ressource est créée avec succès et renvoie la ressource nouvellement créée au format JSON. Renvoie 200 OK si la ressource est accessible ou modifiée avec succès|
+|        `DELET`     | Suppression de ressource , renvoie 200 ok si c'est suprimmer avec succès.|
+|        `PUT`     | Modification de ressource , renvoie 200 ok si c'est modifiée avec succès.|
+
+les codes routours possibles pour les requets de l' API .
+
+| Return values    | Description                |
+| :--------       | :------------------------- |
+| `200 OK`     | GET, PUT ,POST or DELETE requet avec succès, et la resource(s) retournée en JSON.               |
+| `204 No Content`      | Requête traitée avec succès, mais pas d’information à renvoyer.             |
+| `201 Created`      |  POST avec succès,  et la resource(s) retournée en JSON.     |
+| `304 Not Modified`      |la resource(s) n'est pas modified .           |
+| `400 Bad Request`      |le serveur n'a pas compris la requête.      |
+| `401 Unauthorized`      |L'utulisateur n'est pas  authentifié. no token .  |
+| `403 Forbidden`      | Accès interdit , Le serveur comprend la requête mais refuse de l'autoriser.  |
+| `404 Not Found`      | La resource n'est pas accessible   |
+| `422 Unprocessable`      | la requête est correctement formatée,dedecte un erreur qui empêche le serveur d'émettre une réponse correctement. |
+| `500 Server Error`      | Erreur au niveau de  server.   |
+
+
+## Setup :
+
+ - execute le code suivant :
+```
+    $ docker-compose up -d
+```
+ - ouvrire  ton  navigateur sur le lien :
+   [http://localhost:9001](http://localhost:9001/)
+   
+ - maintenant tu peux bien gérer vos tables de data par  le phpMyadmin
 
 
 ![1](https://user-images.githubusercontent.com/62666792/169587999-bbdad324-229e-4bb0-b994-7e953c22673c.PNG)
 
 
 ![image](https://user-images.githubusercontent.com/62666792/169588346-5e74f6b6-b8af-4fab-a0ad-e03ce4b09a2a.png)
+
+ - en parallel vous pouvez teste les resquets de l' API sur le porte : 
+    [http://localhost:3000](http://localhost:3000/)
