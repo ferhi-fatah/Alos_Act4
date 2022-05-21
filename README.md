@@ -90,7 +90,8 @@ docker exécuter hello-world
 
 #### Fichier Docker
 
-[Le fichier de configuration](https://docs.docker.com/engine/reference/builder/). Configure un conteneur Docker lorsque vous exécutez "docker build" dessus. Largement préférable à `docker commit`.
+[Le fichier de configuration](https://docs.docker.com/engine/reference/builder/). 
+Configure un conteneur Docker lorsque vous exécutez "docker build" dessus. Largement préférable à `docker commit`.
 
 Voici quelques éditeurs de texte courants et leurs modules de coloration syntaxique que vous pouvez utiliser pour créer des Dockerfiles :
 
