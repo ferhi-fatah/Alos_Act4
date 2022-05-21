@@ -142,21 +142,23 @@ L'API est conçue pour renvoyer différents codes d'état en fonction du context
 
 | Request type    |Description                   |
 | :--------       |:-------------------------    |
-|        `GET`     | Access one or more resources and return the result as JSON.|
-|        `POST`     | Return 201 Created if the resource is successfully created and return the newly created resource as JSON.Return 200 OK if the resource is accessed or modified successfully|
+|        `GET`     | Accéder à une ou plusieurs ressources et renvoyer le résultat au format JSON.|
+|        `POST`     | Renvoie 201 si la ressource est créée avec succès et renvoie la ressource nouvellement créée au format JSON. Renvoie 200 OK si la ressource est accessible ou modifiée avec succès|
+|        `DELET`     | Suppression de ressource , renvoie 200 ok si c'est suprimmer avec succès.|
+|        `PUT`     | Modification de ressource , renvoie 200 ok si c'est modifiée avec succès.|
 
-The following table shows the possible return codes for API requests.
+les codes routours possibles pour les requets de l' API .
 
 | Return values    | Description                |
 | :--------       | :------------------------- |
-| `200 OK`     | The GET, PUT or DELETE request was successful, and the resource(s) itself is returned as JSON.               |
-| `204 No Content`      | The server has successfully fulfilled the request, and there is no additional content to send in the response payload body.             |
-| `201 Created`      | The POST request was successful, and the resource is returned as JSON.    |
-| `304 Not Modified`      |The resource hasn't been modified since the last request.           |
-| `400 Bad Request`      |A required attribute of the API request is missing. For example, the title of an issue is not given.        |
-| `401 Unauthorized`      |The user isn't authenticated. A valid user token is necessary.  |
-| `403 Forbidden`      | The request isn't allowed. For example, the user isn't allowed to delete a project.  |
-| `404 Not Found`      | A resource couldn't be accessed. For example, an ID for a resource couldn't be found. |
-| `422 Unprocessable`      | The entity couldn't be processed. |
-| `500 Server Error`      | While handling the request, something went wrong on the server.   |
+| `200 OK`     | GET, PUT ,POST or DELETE requet avec succès, et la resource(s) retournée en JSON.               |
+| `204 No Content`      | Requête traitée avec succès, mais pas d’information à renvoyer.             |
+| `201 Created`      |  POST avec succès,  et la resource(s) retournée en JSON.     |
+| `304 Not Modified`      |la resource(s) n'est pas modified .           |
+| `400 Bad Request`      |le serveur n'a pas compris la requête.      |
+| `401 Unauthorized`      |L'utulisateur n'est pas  authentifié. no token .  |
+| `403 Forbidden`      | Accès interdit , Le serveur comprend la requête mais refuse de l'autoriser.  |
+| `404 Not Found`      | La resource n'est pas accessible   |
+| `422 Unprocessable`      | la requête est correctement formatée,dedecte un erreur qui empêche le serveur d'émettre une réponse correctement. |
+| `500 Server Error`      | Erreur au niveau de  server.   |
 
