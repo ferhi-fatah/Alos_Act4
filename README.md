@@ -9,7 +9,7 @@
 
 1. [Docker](https://github.com/ferhi-fatah/Alos_Act4#docker-)
     1. [1. C'est quoi Docker](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-docker)
-    1. [2.Installation](https://github.com/ferhi-fatah/Alos_Act4#Installation)
+    1. [2. Installation](https://github.com/ferhi-fatah/Alos_Act4#Installation)
 1. [Node.js](https://github.com/ferhi-fatah/Alos_Act4#nodejs)
     1. [1. C'est quoi Node.js](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-nodejs)
     1. [2. l'image de Node.js](https://github.com/ferhi-fatah/Alos_Act4#limage-de-nodejs-)
@@ -54,10 +54,12 @@ Si vous êtes un débutant complet de Docker, vous devriez suivre la [série de 
 
 ##### macOS :
 
-Téléchargez et installez [Docker Community Edition](https://www.docker.com/community-edition). si vous avez Homebrew-Cask, tapez simplement "brew cask install docker". Ou Téléchargez et installez [Docker Toolbox](https://docs.docker.com/toolbox/overview/). [Docker pour Mac](https://docs.docker.com/docker-for-mac/) est sympa, mais ce n'est pas aussi fini que l'installation de VirtualBox. [Voir la comparaison](https://docs.docker.com/docker-for-mac/docker-toolbox/).
+Téléchargez et installez [Docker Community Edition](https://www.docker.com/community-edition). si vous avez Homebrew-Cask, tapez simplement "brew cask install docker". Ou Téléchargez et installez [Docker Toolbox](https://docs.docker.com/toolbox/overview/). [Docker pour Mac](https://docs.docker.com/docker-for-mac/) est sympa, mais ce n'est pas aussi fini que l'installation de VirtualBox. [Voir la comparaison](https://docs.docker.com/docker-for-mac/docker-toolbox/).  
 
 
-> **REMARQUE** Docker Toolbox est hérité. Vous devez utiliser Docker Community Edition, voir [Docker Toolbox](https://docs.docker.com/toolbox/overview/).
+
+> **REMARQUE** Docker Toolbox est hérité. Vous devez utiliser Docker Community Edition, voir [Docker Toolbox](https://docs.docker.com/toolbox/overview/).  
+
 
 
 Une fois que vous avez installé Docker Community Edition, cliquez sur l'icône Docker dans Launchpad. Ensuite, démarrez un conteneur :
