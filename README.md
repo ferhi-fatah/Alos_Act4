@@ -274,8 +274,9 @@ les codes routours possibles pour les requets de l' API .
  - en parallel vous pouvez teste les resquets de l' API sur le porte : 
     [http://localhost:3000](http://localhost:3000/)
 #### l'aceuille :
-https://user-images.githubusercontent.com/62666792/169663309-c490bbd3-e8eb-49e9-81cd-c23df2cd06dd.mp4
- 
+
+Uploading Sans titre2.mp4…
+
 ##### la récupération de data :
  - la route (http://localhost:3000/1.0.0/data) :  
  
