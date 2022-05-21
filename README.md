@@ -210,7 +210,4 @@ https://user-images.githubusercontent.com/62666792/169663309-c490bbd3-e8eb-49e9-
  - la route (http://localhost:3000/2.0.0/currencies/1) :  
  
 ![2](https://user-images.githubusercontent.com/62666792/165106203-565a059f-8815-4448-b9d5-6bf0fe16aaa8.PNG)
-<<<<<<< HEAD
-=======
 
->>>>>>> 42069a24f2e6630a9fcb547601316ac002d28b10
