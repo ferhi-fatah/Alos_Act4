@@ -9,7 +9,7 @@ const { body, validationResult } = require('express-validator');
 module.exports.accueil = function (apiVersion, req, res) {
 
   return function () {
-    location.href = '../UI/accueille.html';
+    location.href = '../UI/api/accueille.html';
 };
   
 }
