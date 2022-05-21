@@ -15,6 +15,8 @@
 1. [phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#phpmyadmin)
     1. [1. C'est quoi phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-phpmyadmin-)
     1. [2. l'image de phpmyadmin](https://github.com/ferhi-fatah/Alos_Act4#limage-de-phpmyadmin-)
+1. [API Reference Pour PostMan](https://github.com/ferhi-fatah/Alos_Act4#api-reference-pour-postman-)
+1. [Setup](https://github.com/ferhi-fatah/Alos_Act4/blob/main/README.md#setup-)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -125,7 +127,7 @@ services:
  ```
  - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/phpmyadmin/docker/blob/master/LICENSE)
 
-## API Reference For PostMan :
+## API Reference Pour PostMan :
 
 L'API est conçue pour renvoyer différents codes d'état en fonction du contexte et de l'action. De cette façon, si une demande entraîne une erreur, l'appelant est en mesure d'avoir un aperçu de ce qui s'est mal passé. Le tableau suivant donne un aperçu du comportement général des fonctions API.
 
