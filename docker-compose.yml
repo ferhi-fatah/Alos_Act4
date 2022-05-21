@@ -26,6 +26,17 @@ services:
     networks:
       - backend
       - frontend
+  api-ui:
+    depends_on:
+      - node
+    build:
+      context: ./ui
+      args:
+        - REACT_APP_API_BASE_URL=$CLIENT_API_BASE_URL
+    ports:
+      - $REACT_LOCAL_PORT:$REACT_DOCKER_PORT
+    networks:
+      - frontend  
 
   mysql_db:
     image: mysql:latest
