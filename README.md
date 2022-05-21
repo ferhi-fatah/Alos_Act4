@@ -1,7 +1,7 @@
 ## Alos_Act4
 l'activite 4 de module Architecture logicielle orientée service 
 - Thème  : Cryptome , API de crypto-monnaie .
-<p align="center" width="100%">
+<p align="center" width="75%">
   <img src= "https://user-images.githubusercontent.com/62666792/169668913-3bc51341-d311-40ca-a60f-e2828a4eff36.png" > 
 </p>        
 
