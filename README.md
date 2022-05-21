@@ -5,6 +5,9 @@ l'activite 4 de module Architecture logicielle orientée service
   <img src= "https://user-images.githubusercontent.com/62666792/169668913-3bc51341-d311-40ca-a60f-e2828a4eff36.png" > 
 </p>        
 
+https://user-images.githubusercontent.com/62666792/169671491-48158d7e-01f0-4068-aeaa-cb3a934920da.mp4
+
+
 ## Indexage :
 <details>
 <summary><b>(click pour details)</b></summary>
