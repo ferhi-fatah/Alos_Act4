@@ -10,6 +10,8 @@
 1. [Docker](https://github.com/ferhi-fatah/Alos_Act4#docker-)
     1. [1. C'est quoi Docker](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-docker)
     1. [2. Installation](https://github.com/ferhi-fatah/Alos_Act4#Installation)
+    1. [3. Fichier Docker](https://github.com/ferhi-fatah/Alos_Act4#Instructions)
+    1. [4. Instructions](https://github.com/ferhi-fatah/Alos_Act4#Instructions)
 1. [Node.js](https://github.com/ferhi-fatah/Alos_Act4#nodejs)
     1. [1. C'est quoi Node.js](https://github.com/ferhi-fatah/Alos_Act4#cest-quoi-nodejs)
     1. [2. l'image de Node.js](https://github.com/ferhi-fatah/Alos_Act4#limage-de-nodejs-)
@@ -85,6 +87,45 @@ version docker
 # Extrayez, créez et exécutez 'hello-world' :
 docker exécuter hello-world
 ```
+
+#### Fichier Docker
+
+[Le fichier de configuration](https://docs.docker.com/engine/reference/builder/). Configure un conteneur Docker lorsque vous exécutez "docker build" dessus. Largement préférable à `docker commit`.
+
+Voici quelques éditeurs de texte courants et leurs modules de coloration syntaxique que vous pouvez utiliser pour créer des Dockerfiles :
+
+* [Code VS](https://github.com/Microsoft/vscode-docker)
+* [Sublime Text](https://packagecontrol.io/packages/Dockerfile%20Syntax%20Highlighting)
+* [Atom](https://atom.io/packages/language-docker)
+* [Vim](https://github.com/ekalinin/Dockerfile.vim)
+* [Emacs](https://github.com/spotify/dockerfile-mode)
+* [TextMate](https://github.com/docker/docker/tree/master/contrib/syntax/textmate)
+* Voir aussi [Docker meets the IDE](https://domeide.github.io/)
+
+#### Instructions
+
+* [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
+* [FROM](https://docs.docker.com/engine/reference/builder/#from) Définit l'image de base pour les instructions suivantes.
+* [MAINTAINER (deprecated - use LABEL instead)](https://docs.docker.com/engine/reference/builder/#maintainer-deprecated) Définissez le champ Auteur des images générées.
+* [RUN](https://docs.docker.com/engine/reference/builder/#run) exécute toutes les commandes dans un nouveau layer au-dessus de l'image actuelle et valide les résultats.
+* [CMD](https://docs.docker.com/engine/reference/builder/#cmd) fournit des valeurs par défaut pour un conteneur en cours d'exécution.
+* [EXPOSE](https://docs.docker.com/engine/reference/builder/#expose)informe Docker que le conteneur écoute sur les ports réseau spécifiés lors de l'exécution. REMARQUE : ne rend pas réellement les ports accessibles.
+* [ENV](https://docs.docker.com/engine/reference/builder/#env) définit les variables d'environnement.
+* [ADD](https://docs.docker.com/engine/reference/builder/#add) copie les nouveaux fichiers, répertoires ou fichiers distants dans le conteneur. Invalide les caches. Évitez `ADD` et utilisez `COPY` à la place.
+* [COPY](https://docs.docker.com/engine/reference/builder/#copy) copie les nouveaux fichiers ou répertoires dans le conteneur. Par défaut, ceci copie en tant que root quels que soient les paramètres USER/WORKDIR. Utilisez `--chown=<user>:<group>` pour donner la propriété à un autre user/group.  (aussi pour `ADD`.)
+* [ENTRYPOINT](https://docs.docker.com/engine/reference/builder/#entrypoint) configure un conteneur qui s'exécutera en tant qu'exécutable.
+* [VOLUME](https://docs.docker.com/engine/reference/builder/#volume) crée un mount-point pour les volumes montés en externe ou d'autres conteneurs.
+* [USER](https://docs.docker.com/engine/reference/builder/#user) définit le nom d'utilisateur pour les commandes RUN / CMD / ENTRYPOINT .
+* [WORKDIR](https://docs.docker.com/engine/reference/builder/#workdir) définit le répertoire de travail.
+* [ARG](https://docs.docker.com/engine/reference/builder/#arg) définit une variable de build-time 
+* [ONBUILD](https://docs.docker.com/engine/reference/builder/#onbuild) ajoute une instruction de déclenchement lorsque l'image est utilisée comme base pour une autre construction.
+* [STOPSIGNAL](https://docs.docker.com/engine/reference/builder/#stopsignal) sets the system call signal that will be sent to the container to exit.
+* [LABEL](https://docs.docker.com/config/labels-custom-metadata/) applique des métadonnées key/value  à vos images, conteneurs ou démons. 
+* [SHELL](https://docs.docker.com/engine/reference/builder/#shell) remplace le shell par défaut utilisé par docker pour exécuter des commandes.
+* [HEALTHCHECK](https://docs.docker.com/engine/reference/builder/#healthcheck) indique à Docker comment tester un conteneur pour vérifier qu'il fonctionne toujours.
+
+
+
 
 ## [Node.js](https://nodejs.org/en/)
 
