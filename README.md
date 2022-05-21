@@ -78,7 +78,7 @@ Concrètement, Node.js est un environnement bas niveau permettant l’exécution
     CMD [ "node", "server.js" ]
     
 ```
- - License : pour plus d'informations sur la license  de [phpmyadmin/docker](https://github.com/nodejs/node/blob/master/LICENSE)
+ - License : pour plus d'informations sur la license  de [Node.js/docker](https://github.com/nodejs/node/blob/master/LICENSE)
  
 ## [phpMyAdmin](https://www.phpmyadmin.net/)
 
