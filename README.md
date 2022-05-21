@@ -2,8 +2,8 @@
 l'activite 4 de module Architecture logicielle orientée service 
 - Thème  : Cryptome , API de crypto-monnaie .
 <p align="center" width="100%">
-  <img src= "https://user-images.githubusercontent.com/62666792/169668769-682699ab-5d13-43b3-b4f4-220b77f139a9.png" > 
-</p>       
+  <img src= "https://user-images.githubusercontent.com/62666792/169668913-3bc51341-d311-40ca-a60f-e2828a4eff36.png" > 
+</p>        
 
 ## Indexage :
 <details>
