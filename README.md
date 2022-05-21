@@ -175,3 +175,10 @@ les codes routours possibles pour les requets de l' API .
 
  - en parallel vous pouvez teste les resquets de l' API sur le porte : 
     [http://localhost:3000](http://localhost:3000/)
+
+
+
+
+https://user-images.githubusercontent.com/62666792/169663309-c490bbd3-e8eb-49e9-81cd-c23df2cd06dd.mp4
+
+
